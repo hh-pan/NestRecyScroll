@@ -49,6 +49,6 @@
 
 **效果**
 
-![效果图](https://github.com/hh-pan/NestRecyScroll/edit/master/screenshots/GIF.gif)
+![效果图](https://github.com/hh-pan/NestRecyScroll/raw/master/screenshots/GIF.gif)
 
 
