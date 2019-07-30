@@ -48,6 +48,7 @@
 ```
 
 **效果**
-<iframe height=500 width=500 src="gif地址">
+
+![效果图](https://github.com/hh-pan/NestRecyScroll/edit/master/screenshots/GIF.gif)
 
 
