@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_50"
+        android:paddingLeft="@dimen/dp_27"
+        android:paddingRight="@dimen/dp_27">
+
+        <EditText
+            android:id="@+id/edit_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/input_account"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="@dimen/sp_14"/>
+
+        <ImageView
+            android:id="@+id/imag_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_18"
+            android:background="@drawable/input_clear"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_27"
+        android:background="@null"
+        android:hint="@string/code"
+        android:textSize="@dimen/sp_14"/>
+    <Button
+        android:id="@id/login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_27"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_27"
+        android:text="登录"
+        android:textSize="@dimen/sp_16"/>
+
+</LinearLayout>

@@ -1,10 +1,12 @@
-package com.test.nestrecyscroll;
+package com.test.nestrecyscroll.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.test.nestrecyscroll.R;
 
 /**
  * Created by Pan on 2019/7/30.
@@ -21,7 +23,7 @@ public class ItemAdapter extends RecyclerView.Adapter {
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        return new MyViewHolder(View.inflate(mContext,R.layout.recy_item,null));
+        return new MyViewHolder(View.inflate(mContext, R.layout.recy_item,null));
     }
 
     @Override
