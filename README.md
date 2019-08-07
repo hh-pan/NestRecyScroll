@@ -52,6 +52,6 @@
 ![效果图](https://github.com/hh-pan/NestRecyScroll/raw/master/screenshots/GIF.gif)
 
 
-#### 2019.8.7 登录功能MVP抽取  <https://www.jianshu.com/p/19283a3f61de>
+#### 2019.8.7 登录功能MVP抽取  [原文地址]<https://www.jianshu.com/p/19283a3f61de>
 
 
