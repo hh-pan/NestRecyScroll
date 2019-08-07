@@ -39,7 +39,7 @@
         android:layout_height="@dimen/dp_50"
         android:layout_marginLeft="@dimen/dp_27"
         android:background="@null"
-        android:hint="@string/code"
+        android:hint="@string/pwd"
         android:textSize="@dimen/sp_14"/>
     <Button
         android:id="@id/login"

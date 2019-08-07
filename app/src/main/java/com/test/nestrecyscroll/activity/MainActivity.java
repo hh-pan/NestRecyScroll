@@ -10,16 +10,16 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.test.nestrecyscroll.MainContacts;
 import com.test.nestrecyscroll.R;
 import com.test.nestrecyscroll.adapter.ItemAdapter;
 import com.test.nestrecyscroll.fragment.PageFragment;
-import com.test.nestrecyscroll.presenter.MainPresenter;
+import com.test.nestrecyscroll.presenter.IBasePresenter;
+import com.test.nestrecyscroll.view.IBaseView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends BaseActivity<MainContacts.MainPresenter> implements MainContacts.MainUi {
+public class MainActivity extends BaseActivity<IBasePresenter> implements IBaseView {
 
     private List<Fragment> pageList;
     private List<String> titleList;
@@ -30,8 +30,8 @@ public class MainActivity extends BaseActivity<MainContacts.MainPresenter> imple
     }
 
     @Override
-    public MainContacts.MainPresenter onBindPresenter() {
-        return new MainPresenter(this);
+    public IBasePresenter onBindPresenter() {
+        return null;
     }
 
     @Override

@@ -2,4 +2,5 @@
     <string name="app_name">NestRecyScroll</string>
     <string name="input_account">输入账号</string>
     <string name="code">验证码</string>
+    <string name="pwd">密码</string>
 </resources>

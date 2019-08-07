@@ -3,8 +3,8 @@ package com.test.nestrecyscroll.presenter;
 import android.support.annotation.NonNull;
 
 import com.test.nestrecyscroll.HttpResponseListener;
-import com.test.nestrecyscroll.bean.LoginBean;
 import com.test.nestrecyscroll.LoginContacts;
+import com.test.nestrecyscroll.bean.LoginBean;
 import com.test.nestrecyscroll.model.LoginMdl;
 
 /**
@@ -23,7 +23,7 @@ public class LoginPresenter extends BasePresenter<LoginContacts.LoginUi, LoginBe
 
     @Override
     public void login(String name, String pwd) {
-
+        getView().showLoading();
         mLoginMdl.login(name, pwd, this);
     }
 
@@ -32,7 +32,8 @@ public class LoginPresenter extends BasePresenter<LoginContacts.LoginUi, LoginBe
         // 先判断是否已经与 View 建立联系
         if (isViewAttach()) {
             // 登录成功调用
-            getView().loginSuccess();
+            getView().hideLoading();
+            getView().loginSuccess(o.msg);
         }
     }
 
@@ -40,7 +41,8 @@ public class LoginPresenter extends BasePresenter<LoginContacts.LoginUi, LoginBe
     public void onFailure(Object tag, String failure) {
         if (isViewAttach()) {
             // 登录失败调用
-            getView().loginFail();
+            getView().hideLoading();
+            getView().loginFail(failure);
         }
     }
 }

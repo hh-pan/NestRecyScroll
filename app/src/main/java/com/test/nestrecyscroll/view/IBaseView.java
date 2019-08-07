@@ -9,6 +9,4 @@ public interface IBaseView extends IBaseXView {
     void showLoading();
 
     void hideLoading();
-
-    void showToast();
 }

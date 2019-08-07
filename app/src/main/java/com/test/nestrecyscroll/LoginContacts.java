@@ -1,5 +1,6 @@
 package com.test.nestrecyscroll;
 
+import com.test.nestrecyscroll.bean.LoginBean;
 import com.test.nestrecyscroll.presenter.IBasePresenter;
 import com.test.nestrecyscroll.view.IBaseView;
 
@@ -15,13 +16,15 @@ public class LoginContacts {
     public interface LoginUi extends IBaseView {
         /**
          * 登录成功
+         * @param msg
          */
-        void loginSuccess();
+        void loginSuccess(String msg);
 
         /**
          * 登录失败
+         * @param message
          */
-        void loginFail();
+        void loginFail(String message);
     }
 
     /**
@@ -37,6 +40,6 @@ public class LoginContacts {
      */
     public interface LoginMdl {
 
-        void login(String name, String pwd, HttpResponseListener callback);
+        void login(String name, String pwd, HttpResponseListener<LoginBean> callback);
     }
 }

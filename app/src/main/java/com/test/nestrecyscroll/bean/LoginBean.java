@@ -8,4 +8,9 @@ public class LoginBean {
 
     public int code;
     public String msg;
+
+    public LoginBean(int code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
 }
